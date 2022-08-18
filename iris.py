@@ -1,9 +1,9 @@
 # S10.1: Copy this code cell in 'iris_app.py' using the Sublime text editor. You have already created this ML model in the previous class(es).
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from annotated_text import annotated_text
-from htbuilder.units import unit
-from htbuilder import H,HtmlElement,styles
+# from annotated_text import annotated_text
+# from htbuilder.units import unit
+# from htbuilder import H,HtmlElement,styles
 
 # Importing the necessary libraries.
 import numpy as np
@@ -64,14 +64,14 @@ if st.sidebar.button('predict'):
 
   if z == 'LogisticRegression':
     pred 	=		predict(sl,sw,pl,pw,b)
-    annotated_text(('flower:','','blue'),' ',str(pred))
-    annotated_text(('score:',' ','#2ae'),str(c))
+    st.write(('flower:',str(pred))
+    st.write(('score:',str(c))
   if z == 'RandomForestClassifier':
 
     pred = predict(sl,sw,pl,pw,a)
-    annotated_text(('flower:',str(pred)))
+    st.info(('flower:',str(pred)))
     st.annotated_text(('score:',' ','#2ae'),str(s))
   if z == 'SVC':
     pred = predict(sl,sw,pl,pw,svc_model)
-    annotated_text(('flower:','','2ae'),str(pred))
-    annotated_text(('score:',' ','#2ae'),str(score))
+    st.info(('flower:',str(pred))
+    st.success(('score:',' ','#2ae'),str(score))
