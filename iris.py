@@ -64,7 +64,7 @@ if st.sidebar.button('predict'):
 
   if z == 'LogisticRegression':
     pred 	=		predict(sl,sw,pl,pw,b)
-    st.write(('flower:',str(pred))
+    st.write('flower:',str(pred))
     st.write('score:',str(c))
   if z == 'RandomForestClassifier':
 
