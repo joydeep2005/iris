@@ -65,13 +65,13 @@ if st.sidebar.button('predict'):
   if z == 'LogisticRegression':
     pred 	=		predict(sl,sw,pl,pw,b)
     st.write(('flower:',str(pred))
-    st.write(('score:',str(c))
+    st.write('score:',str(c))
   if z == 'RandomForestClassifier':
 
     pred = predict(sl,sw,pl,pw,a)
-    st.info(('flower:',str(pred)))
-    st.annotated_text(('score:',' ','#2ae'),str(s))
+    st.info('flower:',str(pred))
+    st.write('score:',str(s))
   if z == 'SVC':
     pred = predict(sl,sw,pl,pw,svc_model)
     st.info(('flower:',str(pred))
-    st.success(('score:',' ','#2ae'),str(score))
+    st.success('score:',str(score))
