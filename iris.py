@@ -69,9 +69,9 @@ if st.sidebar.button('predict'):
   if z == 'RandomForestClassifier':
 
     pred = predict(sl,sw,pl,pw,a)
-    st.info('flower:',str(pred))
+    st.info(f'flower: {str(pred)}')
     st.write('score:',str(s))
   if z == 'SVC':
     pred = predict(sl,sw,pl,pw,svc_model)
-    st.write('flower:',str(pred))
-    st.success('score:',str(score))
+    st.write('flower:,str(pred)')
+    st.success(f'score:{str(score)}')
