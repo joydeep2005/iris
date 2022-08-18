@@ -73,5 +73,5 @@ if st.sidebar.button('predict'):
     st.write('score:',str(s))
   if z == 'SVC':
     pred = predict(sl,sw,pl,pw,svc_model)
-    st.info('flower:',str(pred))
+    st.write('flower:',str(pred))
     st.success('score:',str(score))
