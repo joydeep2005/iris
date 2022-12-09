@@ -53,7 +53,7 @@ pl = st.sidebar.slider('PetalLengthCm',float(iris_df['PetalLengthCm'].min()),flo
 pw  =st.sidebar.slider('PetalWidthCm',float(iris_df['PetalWidthCm'].min()),float(iris_df['PetalWidthCm'].max()))
 o = ['LogisticRegression','RandomForestClassifier','SVC']
 z = st.sidebar.radio('select classisfier',o)
-def predict(sl,sw,pl,pw,z):
+def predict(z):
 	y_pred = z.predict([[sl,sw,pl,pw]])
 	if y_pred[0] ==0:
 		return 'Iris Setosa'
