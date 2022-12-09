@@ -16,7 +16,8 @@ from sklearn.svm import SVC
 
 # Loading the dataset.
 df = st.file_uploader('upload')
-iris_df = pd.read_csv(df)
+print(df)
+iris_df = pd.read_csv(iris-species.csv)
 
 # Adding a column in the Iris DataFrame to resemble the non-numeric 'Species' column as numeric using the 'map()' function.
 # Creating the numeric target column 'Label' to 'iris_df' using the 'map()' function.
