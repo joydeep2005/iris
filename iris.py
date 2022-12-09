@@ -65,15 +65,15 @@ def predict(z):
 if st.sidebar.button('predict'):
 
   if z == 'LogisticRegression':
-    pred 	=		predict(sl,sw,pl,pw,b)
+    pred 	=		predict(b)
     st.write('flower:',str(pred))
     st.write('score:',str(c))
   if z == 'RandomForestClassifier':
 
-    pred = predict(sl,sw,pl,pw,a)
+    pred = predict(a)
     st.info(f'flower: {str(pred)}')
     st.write('score:',str(s))
   if z == 'SVC':
-    pred = predict(sl,sw,pl,pw,svc_model)
+    pred = predict(svc_model)
     st.write('flower:' )
     st.success(f'score:{str(score)}')
